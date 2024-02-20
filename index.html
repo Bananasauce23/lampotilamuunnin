@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Lämpötilamuunnin</title>
+</head>
+<body>
+    <h1>Lämpötilamuunnin</h1>
+    <form>
+        <select name="versio" id="versio">
+            <option value="celsiusfahren">Celsius -> Fahrenheit</option>
+            <option value="fahrencelsius">Fahrenheit -> Celsius</option>
+        </select>
+    </form>
+    <form>
+        <label for="syota">Syötä lämpötila (desimaalit pisteellä, ei pilkulla):</label><br>
+        <input type="text" id="syotalampo">
+        <input type="submit" id="muunna" value="Muunna">
+        <span id="virhe"></span><br>
+        <input type="radio" id="1des" name="desimaali" value="1 desimaali" checked="checked">
+        <label for="1des">1 desimaali</label><br>
+        <input type="radio" id="2des" name="desimaali" value="2 desimaalia">
+        <label for="2des">2 desimaalia</label><br>
+        <input type="radio" id="3des" name="desimaali" value="3 desimaalia">
+        <label for="3des">3 desimaalia</label><br>
+        <span id="lampotila"></span><br>
+        <span id="nollapiste"></span>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+:root{
+    --bg: #FFFBFE;
+    --teksti: #28262C;
+}
+
+body{
+    background-color: var(--bg);
+}
+
+body, input, select{
+    font-family: "Source Sans 3", sans-serif;
+    color: var(--teksti);
+}
+
+input, select{
+    font-size: 1em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h1{
+    font-family: "Oswald";
+    color: var(--teksti);
+}
+
+span{
+    font-size: 20px;
+}
+
+#virhe{
+    color: red;
+}
